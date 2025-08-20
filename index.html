@@ -941,7 +941,7 @@
             <br><br>
             <a href="https://suzu-photo.com/wp-content/uploads/2025/04/%E4%B8%83%E4%BA%94%E4%B8%89%E3%83%BB%E7%94%A3%E7%9D%80%E3%83%BB%E8%A8%AA%E5%95%8F%E7%9D%80_%E6%96%99%E9%87%91%E8%A1%A8-scaled.jpg"
                 target="_blank" rel="noopener noreferrer">
-                ＞＞衣装レンタル料金表＜＜
+                ＞＞和装レンタル料金表＜＜
             </a><br>
 料金はアルファベットのランクごとに分けられています。<br>
 料金表と照らし合わせてご覧ください。
@@ -957,7 +957,10 @@
             <button type="button" onclick="selectfootsize(this)">21～22cm</button>
         </div>
 
-        <div class="labelhidarizurasi">あんしんパックの有無</div>
+<div class="labelhidarizurasi">
+  あんしんパックの有無<br>
+  <span style="font-size: 12px;">(お参り同行、ロケの方は必須)</span>
+</div>
         <div class="AnshinPack-buttons">
             <button type="button" onclick="selectAnshinPack(this)">有り</button>
             <button type="button" onclick="selectAnshinPack(this)">無し</button>
@@ -995,12 +998,17 @@
             <button type="button" onclick="selectOtonaAnshinPack(this)">無し</button>
         </div>
 
-        <div class="info-text">在庫確認後、ご予約が確定しましたらご連絡させて頂きます。</div>
-
         <div class="labelhidarizurasi">ご質問/ご相談</div>
         <textarea id="message" rows="4" placeholder="メッセージを入力してください"></textarea>
 
-        <div class="info-text">送信後、お衣装の写真と商品番号が分かる<br>画面のスクリーンショットをご送信ください。</div>
+<div class="info-text">
+  在庫確認後、ご予約が確定しましたらご連絡させて頂きます。<br>
+  <span style="color: red;">
+    フォーム送信後、<span style="font-weight: 900; text-decoration: underline;">お衣装の写真</span> と 
+    <span style="font-weight: 900; text-decoration: underline;">商品番号</span> が分かる<br>
+    画面のスクリーンショットをチャットでご送信ください。
+  </span>
+</div>
 
         <button class="submit-button" onclick="submitForm()" div id="section-message">送信</button>
     </div>
@@ -1024,7 +1032,7 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             liff.init({
-                liffId: '2005254357-zKma9BZk'
+                liffId: '2007884348-GEyN5Rj9'
             }).then(() => {
                 console.log('LIFF初期化成功');
             }).catch((err) => {
